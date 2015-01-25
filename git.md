@@ -4,8 +4,8 @@
 
 ###Git-User configuration
 
-[    git config --global user.name mucximilian
-git config --global user.email mucximilian@gmail.com    ]
+    git config --global user.name mucximilian
+    git config --global user.email mucximilian@gmail.co
 
 ###GitHub SSH Configuration
 
