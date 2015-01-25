@@ -90,7 +90,7 @@ Create a new branch and switch to it:
 
 ###Ignoring files
 
-Create a file called *.gitignore* in your repository directory. To ignore a directory called _dir_ and all _.txt_-files you would add:
+Create a file called **.gitignore** in your repository directory. To ignore a directory called _dir_ and all _.txt_-files you would add:
 
    dir/
    *.txt
