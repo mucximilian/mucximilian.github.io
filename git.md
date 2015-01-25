@@ -1,15 +1,13 @@
-Using Git and Github with Xubuntu.
+#Using Git and Github with Xubuntu.
 
-== Git Setup ==
+##Git Setup
 
-===Git-User configuration===
+###Git-User configuration
 
-<source lang="bash">
-git config --global user.name mucximilian
-git config --global user.email mucximilian@gmail.com
-</source>
+[git config --global user.name mucximilian
+git config --global user.email mucximilian@gmail.com]
 
-=== GitHub SSH Configuration ===
+###GitHub SSH Configuration
 
 This is essential to connect with Git-repositories from GitHub.
 
@@ -20,7 +18,7 @@ ssh-keygen -t rsa -C "your@email.com"
 Accept the default location for the key file (''~/.ssh/id_rsa'') and enter a password. 
 Then add the entire content of the file ''~/.ssh/id_rsa.pub'' to your SSH Key list in your GitHub account settings.
 
-==Creating a repository on Github==
+##Creating a repository on Github
 
 It is posible to create a new repository on the Github website or to create it from the console on your local machine.
 
@@ -28,9 +26,9 @@ It is posible to create a new repository on the Github website or to create it f
 git remote add origin git@github.com:<USERNAME>/<REPOSITORY>.git 
 </source>
 
-==Setting up a local repository==
+##Setting up a local repository
 
-===Download remote repository content===
+###Download remote repository content
 
 If you want the current directory to contain the data of your Github repository, it is necessary to mark the directory as Git-repository at first:
 
@@ -50,7 +48,7 @@ And pull down the content from the remote repository:
 git pull origin master
 </source>
 
-===Download remote repository directory===
+###Download remote repository directory
 
 Execute this command to download the complete repository from GitHub in a new directory with the name of the repository.
 <source lang="bash">
