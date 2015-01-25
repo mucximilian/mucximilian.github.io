@@ -11,11 +11,9 @@
 
 This is essential to connect with Git-repositories from GitHub.
 
-<source lang="bash">
-ssh-keygen -t rsa -C "your@email.com"
-</source>
+    ssh-keygen -t rsa -C "your@email.com"
 
-Accept the default location for the key file (''~/.ssh/id_rsa'') and enter a password. 
+Accept the default location for the key file (_~/.ssh/id\_rsa_) and enter a password. 
 Then add the entire content of the file ''~/.ssh/id_rsa.pub'' to your SSH Key list in your GitHub account settings.
 
 ##Creating a repository on Github
