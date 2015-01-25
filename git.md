@@ -1,11 +1,11 @@
-#Using Git and Github with Xubuntu.
+#Using Git and Github with Xubuntu
 
 ##Git Setup
 
 ###Git-User configuration
 
-[git config --global user.name mucximilian
-git config --global user.email mucximilian@gmail.com]
+[    git config --global user.name mucximilian
+git config --global user.email mucximilian@gmail.com    ]
 
 ###GitHub SSH Configuration
 
