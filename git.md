@@ -14,15 +14,13 @@ This is essential to connect with Git-repositories from GitHub.
     ssh-keygen -t rsa -C "your@email.com"
 
 Accept the default location for the key file (_~/.ssh/id\_rsa_) and enter a password. 
-Then add the entire content of the file ''~/.ssh/id_rsa.pub'' to your SSH Key list in your GitHub account settings.
+Then add the entire content of the file _~/.ssh/id\_rsa.pub_ to your SSH Key list in your GitHub account settings.
 
 ##Creating a repository on Github
 
 It is posible to create a new repository on the Github website or to create it from the console on your local machine.
 
-<source lang="bash">
-git remote add origin git@github.com:<USERNAME>/<REPOSITORY>.git 
-</source>
+    git remote add origin git@github.com:<USERNAME>/<REPOSITORY>.git 
 
 ##Setting up a local repository
 
@@ -30,98 +28,71 @@ git remote add origin git@github.com:<USERNAME>/<REPOSITORY>.git
 
 If you want the current directory to contain the data of your Github repository, it is necessary to mark the directory as Git-repository at first:
 
-<source lang="bash">
-git init
-</source>
+    git init
 
 Now you can add your GitHub repository
 
-<source lang="bash">
-git remote add origin https://github.com/<USERNAME>/<REPOSITORY_NAME>.git
-</source>
+    git remote add origin https://github.com/<USERNAME>/<REPOSITORY_NAME>.git
 
 And pull down the content from the remote repository:
 
-<source lang="bash">
-git pull origin master
-</source>
+    git pull origin master
 
 ###Download remote repository directory
 
 Execute this command to download the complete repository from GitHub in a new directory with the name of the repository.
-<source lang="bash">
-git clone git@github.com:<USERNAME>/<REPOSITORY_NAME>.git
-</source>
 
-==Workig with Git==
+    git clone git@github.com:<USERNAME>/<REPOSITORY_NAME>.git
 
-===Adding files===
+##Workig with Git
+
+###Adding files
 
 If a new file is added locally it can be staged for commiting using
 
-<source lang="bash">
-git add <file>
-</source>
+    git add <file>
 
 You can also add all files in the directory
 
-<source lang="bash">
-git add .
-</source>
+    git add .
 
 or the files in a subdirectory
 
-<source lang="bash">
-git add directory/*
-</source>
+    git add directory/*
 
-===Removing files===
+####Removing files
 
 A file can be removed from the local repository the same similar to how it is added:
 
-<source lang="bash">
-git rm <file>
-</source>
+    git rm <file>
+    
+###Resetting staged files
 
-===Resetting staged files===
+    git reset
 
-<source lang="bash">
-git reset
-</source>
+###Checking stage status
 
-===Checking stage status===
+    git status
 
-<source lang="bash">
-git status
-</source>
-
-===Upload===
+####Upload
 
 Execute these commands in the project folder. The -u tells Git to remember the parameters.
 
-<source lang="bash">
-git commit -m 'Commit text'
-git push -u origin master
-</source>
+    git commit -m 'Commit text'
+    git push -u origin master
 
-===Branching===
+###Branching
 
 Create a new branch and switch to it: 
 
-<source lang="bash">
-git branch new_branch
-git checkout new_branch
-</source>
+    git branch new_branch
+    git checkout new_branch
 
-===Ignoring files===
+###Ignoring files
 
-Create a file called '''.gitignore''' in your repository directory. To ignore a directory called ''dir'' and all ''.txt''-files you would add:
+Create a file called *.gitignore* in your repository directory. To ignore a directory called _dir_ and all _.txt_-files you would add:
 
-<source lang="bash">
-dir/
-*.txt
-</source>
+   dir/
+   *.txt
 
 to your file.
-
-[[Category:Linux]]
